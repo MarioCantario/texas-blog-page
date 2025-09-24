@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Capriola&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rye&display=swap");
+
+body,
+html {
+  height: 100%;
+  font-family: "Capriola", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+main,
+header,
+body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex; /* LØSNING: Bruker Flexbox for en responsiv meny */
+  justify-content: center; /* Sentrerer linkene */
+  gap: 1rem; /* Lager litt luft mellom linkene */
+
+  background-color: rgba(0, 0, 0, 0.4); /* Mørk, gjennomsiktig bakgrunn */
+  border-radius: 16px;
+  margin: 1rem 30rem;
+  padding: 1rem;
+
+  filter: drop-shadow(0px 0px 16px black);
+}
+
+nav a {
+  /* LØSNING: Mye bedre kontrast og lesbarhet */
+  color: #f1f1f1;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 14px 20px; /* Mer balansert padding */
+  border-radius: 8px;
+  transition: background-color 0.3s ease; /* Myk overgang ved hover */
+}
+
+/* Endrer farge når musen er over */
+nav a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+/* Farge for aktiv/valgt link */
+nav a:active {
+  background-color: #ff0000c8;
+  color: white; /* LØSNING: Mye bedre kontrast */
+}
