@@ -27,7 +27,7 @@ html {
 /* --- BACKGROUND STYLES --- */
 /* Bakgrunn for forsiden (home) */
 body.home {
-  background-image: url("texas.webp");
+  background-image: url("../imgs/texas.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
