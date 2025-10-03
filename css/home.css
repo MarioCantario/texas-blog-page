@@ -25,10 +25,12 @@ body {
   /* Example: background-image: url("https://images.unsplash.com/photo-1563813735371-30df15f36603"); */
   background-image: url("../imgs/texas.webp");
   backdrop-filter: blur(8px);
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
+}
+header {
 }
 
 /* Position text in the middle of the page/image */
