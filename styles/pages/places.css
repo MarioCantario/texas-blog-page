@@ -1,20 +1,21 @@
 /* --- BACKGROUND STYLES --- */
+
 /* Bakgrunn for forsiden (home) */
 body.home {
   background-image: url("../imgs/texas.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: var(--bg-midnight); /* Thematic fallback color */
+  background-color: var(--bg-midnight);
   backdrop-filter: blur(8px);
 }
 
 /* --- HERO SECTION --- */
 .bg-text {
-  background-color: rgba(13, 27, 42, 0.7); /* Abyssal Blue w/opacity */
+  background-color: rgba(13, 27, 42, 0.7);
   color: var(--glow-pale);
   font-weight: bold;
-  border: 3px solid #4e8098; /* Muted teal "glow" border */
+  border: 3px solid #4e8098;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -23,7 +24,7 @@ body.home {
   width: 50%;
   text-align: center;
   border-radius: 16px;
-  backdrop-filter: blur(4px); /* A subtle blur on the box itself */
+  backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 }
 

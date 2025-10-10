@@ -1,12 +1,3 @@
-:root {
-  --bg-abyss: #0d1b2a; /* Abyssal Blue for cards and elements */
-  --bg-midnight: #020412; /* Midnight Blue for the darkest backgrounds */
-  --glow-pale: #c8f5ff; /* Pale Bioluminescent Blue for text */
-  --glow-teal: #93e1d8; /* Bioluminescent Teal for links/accents */
-  --rock-dark: #1e222b; /* Dark Volcanic Rock for nav */
-  --shadow: 0 12px 30px rgba(0, 0, 0, 0.6); /* Deeper, darker shadow */
-}
-
 nav {
   display: flex;
   justify-content: center;
@@ -27,7 +18,6 @@ nav a {
   font-size: 17px;
   padding: 14px 20px;
   border-radius: 8px;
-  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav a:hover {
@@ -35,9 +25,8 @@ nav a:hover {
   color: #bffff1;
 }
 
-nav a:active {
+nav .active {
   background-color: #c8f5ff4d;
-  color: white;
 }
 
 @media (max-width: 560px) {

@@ -1,6 +1,4 @@
 body {
-  /* Suggestion: Replace 'texas.webp' with a dark underwater image for a better effect! */
-  /* Example: background-image: url("https://images.unsplash.com/photo-1563813735371-30df15f36603"); */
   background-image: url("../imgs/texas.webp");
   backdrop-filter: blur(8px);
   background-position: top;
