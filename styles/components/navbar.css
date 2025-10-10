@@ -1,0 +1,47 @@
+:root {
+  --bg-abyss: #0d1b2a; /* Abyssal Blue for cards and elements */
+  --bg-midnight: #020412; /* Midnight Blue for the darkest backgrounds */
+  --glow-pale: #c8f5ff; /* Pale Bioluminescent Blue for text */
+  --glow-teal: #93e1d8; /* Bioluminescent Teal for links/accents */
+  --rock-dark: #1e222b; /* Dark Volcanic Rock for nav */
+  --shadow: 0 12px 30px rgba(0, 0, 0, 0.6); /* Deeper, darker shadow */
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  background-color: rgba(30, 34, 43, 0.5);
+  border-radius: 16px;
+  margin: 1rem auto;
+  max-width: 900px;
+  padding: 1rem;
+  filter: drop-shadow(0px 0px 16px black);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+nav a {
+  color: var(--glow-teal);
+  text-decoration: none;
+  font-size: 17px;
+  padding: 14px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #353c4a;
+  color: #bffff1;
+}
+
+nav a:active {
+  background-color: #c8f5ff4d;
+  color: white;
+}
+
+@media (max-width: 560px) {
+  nav {
+    margin: 1rem;
+  }
+}
