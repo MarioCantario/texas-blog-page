@@ -145,3 +145,28 @@ body:not(.home) {
     grid-column: 1 / -1;
   }
 }
+/* Generell body-styling */
+body:not(.home) {
+  background: radial-gradient(
+      1200px 600px at -10% -20%,
+      #114b5f 0%,
+      transparent 60%
+    ),
+    radial-gradient(900px 700px at 120% -10%, #4e8098 0%, transparent 55%),
+    linear-gradient(var(--bg-midnight), #0a1022 40%, var(--bg-abyss) 1000%);
+  background-attachment: fixed;
+}
+
+/* Skjermleser-klasse (Screen Reader Only) */
+/* Denne klassen skjuler et element visuelt, men gjør det tilgjengelig for skjermlesere */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

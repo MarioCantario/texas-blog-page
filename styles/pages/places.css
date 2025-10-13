@@ -1,37 +1,10 @@
-/* --- BACKGROUND STYLES --- */
-
-/* Bakgrunn for forsiden (home) */
-body.home {
-  background-image: url("../imgs/texas.webp");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: var(--bg-midnight);
-  backdrop-filter: blur(8px);
-}
-
-/* --- HERO SECTION --- */
-.bg-text {
-  background-color: rgba(13, 27, 42, 0.7);
-  color: var(--glow-pale);
-  font-weight: bold;
-  border: 3px solid #4e8098;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 50%;
-  text-align: center;
-  border-radius: 16px;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-}
-
-.bg-text h1 {
-  font-family: "Rye", "Times New Roman", Times, serif;
-  font-size: 3.2rem;
-  text-shadow: 0 2px 12px #000000;
+/* Card and grid layout styling */
+.card {
+  grid-column: span 12;
+  grid-row: span 4;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer; /* Shows that the card is clickable */
 }
 
 .desc {
@@ -42,10 +15,10 @@ body.home {
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  background: rgba(20, 24, 40, 0.573);
+  background: rgba(13, 27, 42, 0.8); /* A bit darker for readability */
   color: var(--glow-pale);
   text-align: center;
-  line-height: 2;
+  line-height: 1.6;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease-in-out;
@@ -53,65 +26,54 @@ body.home {
 
 .desc h3 {
   font-size: 30px;
+  margin-bottom: 1rem;
 }
 
 .desc p {
   font-size: 20px;
 }
 
-/* Start of card styling */
-.card {
-  grid-column: span 12;
-  grid-row: span 4;
-  position: relative;
-  overflow: hidden;
-}
-
-.card:hover .desc {
+/* Effect for both mouse (hover) and keyboard (focus) */
+.card:hover .desc,
+.card:focus .desc {
   opacity: 1;
   pointer-events: auto;
 }
-/* End of card styling */
 
-/* --- RESPONSIVENESS --- */
+/* Responsive Media Queries */
 @media (max-width: 1100px) {
   .large {
-    grid-column: span 8; /* Adjust large to fit better */
+    grid-column: span 8;
     grid-row: span 4;
   }
 }
+
 @media (max-width: 820px) {
   .large {
     grid-column: span 12;
-    grid-row: span 4; /* Reverts to a wide banner on smaller screens */
+    grid-row: span 4;
   }
 }
-@media (max-width: 560px) {
-  .small,
-  .medium,
-  .large {
-    grid-row: span 2; /* Give all a consistent height */
-  }
-  nav {
-    margin: 1rem;
-  }
-}
-/* Bakgrunn for andre sider - RE-THEMED GRADIENT */
-body:not(.home) {
-  background: radial-gradient(
-      1200px 600px at -10% -20%,
-      #114b5f 0%,
-      /* Deep Teal "light" source */ transparent 60%
-    ),
-    radial-gradient(
-      900px 700px at 120% -10%,
-      #4e8098 0%,
-      /* Muted Blue "light" source */ transparent 55%
-    ),
-    linear-gradient(var(--bg-midnight), #0a1022 40%, var(--bg-abyss) 1000%);
 
-  /* LEGG TIL DENNE LINJEN:
-    Dette låser bakgrunnen fast, slik at den ikke gjentar seg når du scroller.
-  */
-  background-attachment: fixed;
+/* MEDIA QUERY for better mobile view */
+@media (max-width: 768px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .card {
+    height: 250px;
+  }
+
+  .desc {
+    padding: 1rem; /* breathing room around the text */
+  }
+  .desc h3 {
+    font-size: 22px; /* Adjusts title size */
+  }
+  .desc p {
+    font-size: 16px;
+    line-height: 1.4;
+  }
 }

@@ -6,7 +6,7 @@
     <title>Places in Texas</title>
     <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/pages/places.css" />
-    <link rel="stylesheet" href="styles/components/navbar.css">
+    <link rel="stylesheet" href="styles/components/navbar.css" />
   </head>
   <body>
     <header>
@@ -19,37 +19,169 @@
     </header>
 
     <section>
-      <p>To view information, hover your mouse over the pictures!</p>
-      
+      <p tabindex="0">
+        To see info hold your cursor over each image!
+        <span class="sr-only" tabindex="0">
+          For screen reader users: The descriptions will be read aloud as you
+          navigate to each card.
+        </span>
+      </p>
     </section>
 
     <main class="grid">
-      <div class="card">
-        <img src="https://www.explore.com/img/gallery/head-to-this-historic-street-to-eat-at-some-of-the-best-food-trucks-in-texas/l-intro-1712618845.jpg" alt="Bilde 1" />
-          <div class="desc">
-            <h3>Austin</h3>
-            <p>My adventure started in Austin. My first impression was that the city was full of life and everyone had a great vibe.
-              I skipped the expensive restaurants and went straight for the city's famous food trucks. For just a few dollars, I had the best tacos of my life from a small, colorful truck. Sitting on a bench in the sun with a soda and a perfect taco was the best way to start my trip. 
-              It really showed that great food doesn't have to be expensive.
-            </p>
-          </div>
+      <div class="card" tabindex="0">
+        <img
+          src="https://www.explore.com/img/gallery/head-to-this-historic-street-to-eat-at-some-of-the-best-food-trucks-in-texas/l-intro-1712618845.jpg"
+          alt="A colorful food truck in Austin"
+        />
+        <div class="desc">
+          <h3>Austin</h3>
+          <p>
+            My adventure began in Austin, a city that immediately struck me with
+            its creative energy and wonderfully relaxed atmosphere. I chose to
+            bypass the expensive restaurants in favor of the city's famous food
+            truck scene. For just a few dollars, I had some of the best
+            breakfast tacos I've ever tasted, served from a small, colorful
+            truck. Sitting on a bench in the morning sun with a hot coffee and
+            that perfect taco was the ideal way to start the trip. It was
+            immediate proof that incredible food in Texas doesn't have to be
+            expensive.
+          </p>
         </div>
-        <div class="card">
-          <img src="https://www.visittheusa.com/sites/default/files/styles/hero_l/public/images/hero_media_image/2016-12/Gueros2.jpg?h=56d0ca2e&itok=HUpDSPjj" alt="Bilde 2" />
-          <div class="desc">
-            <h3>Austin - Music stop</h3>
-            <p>You can't go to Austin and not hear the music. The motto of Austin is the "Live Music Capital of the world" and i totally understand why. 
-            Every night, I'd walk down 6th Street and hear music from every bar. I found a small honky-tonk off the main street, ordered a local beer, and just listened to an incredible band.
-            The vibe was amazing and I had a good time. 
-            </p>
-            </div>
-        </div>
-        <div class="card">
-          <img src="imgs/img3.webp" alt="Bilde 3" />
-          <div class="desc"></div>
+      </div>
+
+      <div class="card" tabindex="0">
+        <img
+          src="https://www.visittheusa.com/sites/default/files/styles/hero_l/public/images/hero_media_image/2016-12/Gueros2.jpg?h=56d0ca2e&itok=HUpDSPjj"
+          alt="Live band playing at a bar in Austin"
+        />
+        <div class="desc">
           <h3>Austin - Music stop</h3>
           <p>
+            You can't discuss Austin without mentioning the music. It's known as
+            the "Live Music Capital of the World," and that is no exaggeration.
+            Every evening, I would wander down 6th Street, where the sounds of
+            blues and rock poured out from every bar. I discovered a small
+            honky-tonk off the main street, ordered a local beer, and listened
+            to a remarkably talented band perform. The atmosphere was electric
+            and felt completely authentic. With no cover charge, you simply tip
+            the musicians, making for an unforgettable and affordable night.
+          </p>
+        </div>
+      </div>
 
+      <div class="card" tabindex="0">
+        <img
+          src="https://img.texasmonthly.com/2023/12/best-bbq-bites-2023-1.jpg?auto=compress&crop=faces&fit=fit&fm=jpg&h=0&ixlib=php-3.3.1&q=45&w=1250"
+          alt="A tray with real Texas BBQ brisket"
+        />
+        <div class="desc">
+          <h3>BBQ Heaven</h3>
+          <p>
+            On a mission to find authentic Texas BBQ, I drove from Austin into
+            the Texas Hill Country. I found myself in Lockhart, a small town
+            regarded as the BBQ capital, and got in line outside a legendary
+            establishment. The aroma alone was worth the journey. The meat was
+            so unbelievably tender it practically melted on my tongue. It felt
+            like much more than just a meal—it was a genuine cultural
+            experience.
+          </p>
+        </div>
+      </div>
+
+      <div class="card" tabindex="0">
+        <img
+          src="https://assets.simpleviewinc.com/sv-sanantonio/image/upload/c_limit,h_1200,q_75,w_1200/v1/cms_resources/cms_resources/cms_resources/cms_resources/clients/sanantoniotx/Casa_Rio_Umbrellas_dde8a2f7-7a0b-4137-93d7-76b8265feba0.jpg"
+          alt="The San Antonio River Walk with colorful umbrellas"
+        />
+        <div class="desc">
+          <h3>San Antonio</h3>
+          <p>
+            My next destination was San Antonio, a city with a completely
+            different character. Its Spanish heritage is evident everywhere,
+            with The Alamo and the beautiful River Walk as its main attractions.
+            I spent an entire afternoon strolling along the river, which is
+            nestled one level below the bustling city streets. It's a peaceful,
+            green oasis with charming stone bridges and restaurants shaded by
+            colorful umbrellas. I chose not to eat there, but instead bought an
+            ice cream and simply enjoyed the serene atmosphere. It was
+            incredibly relaxing.
+          </p>
+        </div>
+      </div>
+
+      <div class="card" tabindex="0">
+        <img
+          src="https://texas-time-travel.imgix.net/images/A-Regional-Photos/Lakes/Lakes-Fort-Worth-Herd-Cattle-Drive.jpg?auto=compress%2Cformat&crop=focalpoint&fit=min&fp-x=0.5&fp-y=0.5&h=630&q=80&w=1200&s=0f535b31165ef2b16dd4685e7ac58a84"
+          alt="Cowboys on horses during a cattle drive in Fort Worth"
+        />
+        <div class="desc">
+          <h3>Fort Worth</h3>
+          <p>
+            To get a taste of the Wild West, I traveled to the Fort Worth
+            Stockyards. Twice a day, cowboys guide a herd of Texas Longhorn
+            cattle down the historic street, just as they did a century ago. It
+            was a truly remarkable sight. The entire area looks like a set from
+            a Western film, complete with historic saloons and shops selling
+            cowboy hats and boots. Watching the cattle drive was free, and it
+            offered a genuine feel for Texas's iconic cowboy history.
+          </p>
+        </div>
+      </div>
+
+      <div class="card" tabindex="0">
+        <img
+          src="https://cdn.mos.cms.futurecdn.net/78B7ybJXRpANizWGxG5C5F.jpg"
+          alt="The Space Shuttle on top of a Boeing 747 in Houston"
+        />
+        <div class="desc">
+          <h3>Space Center Houston</h3>
+          <p>
+            Texas is not just about its past; it's also about the future. A day
+            trip to Space Center Houston was a definite must-see. Standing next
+            to the colossal Saturn V rocket that propelled astronauts to the
+            moon was an awe-inspiring experience. It's truly humbling and puts
+            things into perspective. The best thing was seeing the space shuttle
+            replica mounted atop the original Boeing 747 carrier.
+          </p>
+        </div>
+      </div>
+
+      <div class="card" tabindex="0">
+        <img
+          src="imgs/Screenshot 2025-10-14 011456.png"
+          alt="An endless, straight road at sunset in West Texas"
+        />
+        <div class="desc">
+          <h3>West Texas Sunset</h3>
+          <p>
+            Driving west, I finally encountered the Texas I had always pictured:
+            vast, open landscapes under an immense sky. The roads stretched
+            straight to the horizon, seemingly without end. As the sun began to
+            set, I pulled the car over and watched the sky transform into
+            brilliant shades of orange, pink, and purple. The silence was
+            absolute, broken only by a faint wind. In that moment, I grasped the
+            true scale of Texas. This experience cost nothing, yet it felt like
+            one of the most meaningful moments of the trip.
+          </p>
+        </div>
+      </div>
+
+      <div class="card" tabindex="0">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Tex-Mex_nachos_restaurant.jpg/1280px-Tex-Mex_nachos_restaurant.jpg"
+          alt="A large basket of nachos at a Tex-Mex restaurant"
+        />
+        <div class="desc">
+          <h3>Last Night: Tex-Mex!</h3>
+          <p>
+            I chose to celebrate my last night with a classic Tex-Mex feast. I
+            found a family-run restaurant in a small town that was buzzing with
+            energy. I ordered a mountain of nachos and sizzling fajitas, and the
+            portions were enormous, especially for the low price. The food was
+            absolutely delicious. It was the perfect way to cap off an
+            incredible journey. I raised a glass to my adventure and made a
+            promise to myself that I would definitely return one day.
           </p>
         </div>
       </div>
