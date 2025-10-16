@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="no">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/pages/other.css" />
     <link rel="stylesheet" href="styles/components/navbar.css" />
+    <link rel="stylesheet" href="styles/components/footer.css" />
   </head>
   <body>
-    <!-- Header menu-->
     <header>
       <nav>
         <a href="index.html">Home</a>
@@ -17,12 +17,100 @@
         <a href="video.html">Video</a>
         <a class="active" href="about.html">About</a>
       </nav>
-
-      <!-- Background div with text-->
-      <div class="bg-text">
-        <h1>Texas</h1>
-        <p>The about section</p>
-      </div>
     </header>
+
+    <main>
+      <section class="about-section">
+        <h2>About This Project</h2>
+        <p>
+          This fictional travel blog was created as a project to practice web
+          development. The goal was to tell a story about Texas—covering its
+          food, music, nature, and history—while demonstrating skills in
+          responsive design, HTML, and media embedding.
+        </p>
+        <p>
+          The content is inspired by real locations, and all media sources are
+          credited below.
+        </p>
+      </section>
+
+      <section id="sources" class="sources-section">
+        <h2>Sources & Media</h2>
+
+        <h3>Image & Article Sources</h3>
+        <ul>
+          <li>
+            <a href="https://www.youtube.com/watch?v=-2AOf8RB7gg">YouTube:</a>
+            A live-music example used for inspiration.
+          </li>
+          <li>
+            <a
+              href="https://www.dagbladet.no/tema/i-live-music-capital-of-the-world-spilles-det-fra-100-scener-daglig/61325688"
+              >Dagbladet: Live-music piece</a
+            >
+            — background on Austin's music scene.
+          </li>
+          <li>
+            <a
+              href="https://www.austintexas.org/things-to-do/entertainment-districts/sixth-street/"
+              >Austin Convention & Visitors: Sixth Street</a
+            >
+            — info on Sixth Street entertainment.
+          </li>
+        </ul>
+
+        <h3>Video Sources</h3>
+        <ul>
+          <li>
+            Lady Bird Lake —
+            <a href="https://www.youtube.com/watch?v=Biakr9aKTKI">YouTube</a>
+          </li>
+          <li>
+            Spring Pool —
+            <a href="https://www.youtube.com/watch?v=KYovVKd438M">YouTube</a>
+          </li>
+          <li>
+            Fajitas (clip) —
+            <a
+              href="https://elements.envato.com/spatula-flips-sizzling-beef-fajita-strips-on-flat--3PYUDEG"
+              >Envato Elements</a
+            >
+          </li>
+          <li>
+            The Alamo at night —
+            <a
+              href="https://elements.envato.com/the-alamo-at-night-in-san-antonio-texas-with-gimba-D6KXHBT"
+              >Envato Elements</a
+            >
+          </li>
+          <li>
+            Cattle walking —
+            <a href="https://www.youtube.com/watch?v=_OkjmD6865E">YouTube</a>
+          </li>
+          <li>
+            Rocket (Space Center Houston) —
+            <a href="https://www.youtube.com/watch?v=03SkM98-zok">YouTube</a>
+          </li>
+          <li>
+            Nature in Texas —
+            <a href="https://www.youtube.com/watch?v=JbotHJTnTtU">YouTube</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <img src="imgs/logo-footer.svg" alt="Site logo" class="footer-logo" />
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="index.html">Home</a> | <a href="places.html">Places</a> |
+          <a href="video.html">Video</a> |
+          <a href="about.html">About</a>
+        </nav>
+        <p class="footer-credit">
+          Project created by Marius. Sources are credited on this page.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

@@ -170,3 +170,33 @@ body:not(.home) {
   white-space: nowrap;
   border-width: 0;
 }
+
+/* Video layout for video.html */
+.video-wrapper {
+  max-width: 1000px;
+  margin: 6rem auto 3rem; /* push away from header/bg-text */
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.responsive-video {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+  background: #000; /* visible behind poster */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+}
+
+.video-caption {
+  color: var(--glow-pale);
+  margin-top: 0.6rem;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 720px) {
+  .video-wrapper {
+    margin: 4rem auto 2rem;
+  }
+}

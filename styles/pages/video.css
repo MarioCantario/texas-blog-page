@@ -1,30 +1,35 @@
-.place-card img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 16px;
-  display: block;
+/* Container to center everything on the page */
+.video-container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  height: 90vh; /* Takes up most of the screen height */
 }
 
-.small {
-  grid-column: span 3;
-  grid-row: span 2;
-}
-.medium {
-  grid-column: span 6;
-  grid-row: span 2;
-}
-.large {
-  grid-column: span 12;
-  grid-row: span 4;
+/* Styles the main title */
+.video-container h1 {
+  font-family: "Rye", serif;
+  font-size: 3rem;
+  color: var(--glow-pale);
+  margin-bottom: 0.5rem;
 }
 
-@media (max-width: 560px) {
-  .small,
-  .medium,
-  .large {
-    grid-column: 1 / -1;
-  }
+/* Styles the small paragraph under the title */
+.video-container p {
+  font-size: 1.2rem;
+  color: #c9d6e0;
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+/* Styles the video player itself */
+.video-container video {
+  max-width: 800px;
+  width: 100%; /* Makes the video responsive */
+  border-radius: 16px;
+  border: 2px solid #4e8098;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }

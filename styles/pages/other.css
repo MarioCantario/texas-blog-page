@@ -1,0 +1,64 @@
+/* Styles for about/other pages */
+.about-section,
+.sources-section {
+  max-width: 1000px;
+  margin: 6rem auto;
+  padding: 2rem 1rem;
+  background: rgba(13, 27, 42, 0.65);
+  border-radius: 12px;
+  border: 1px solid rgba(78, 128, 152, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  color: var(--glow-pale);
+}
+
+.about-section h2,
+.sources-section h2 {
+  font-family: "Rye", serif;
+  font-size: 1.9rem;
+  margin: 0 0 0.6rem 0;
+  color: #c8f5ff;
+}
+
+.about-section p {
+  line-height: 1.6;
+  font-size: 1rem;
+  margin: 0 0 1rem 0;
+}
+
+.sources-section h3 {
+  margin-top: 1rem;
+  color: #93e1d8;
+  font-size: 1.1rem;
+}
+
+.sources-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.6rem 0 0 0;
+}
+
+.sources-section li {
+  margin: 0.6rem 0;
+  padding: 0.4rem 0.6rem;
+  border-radius: 8px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.sources-section a {
+  color: #c8f5ff;
+  text-decoration: underline dotted;
+}
+
+.sources-section a:hover {
+  text-decoration: underline solid;
+}
+
+@media (max-width: 720px) {
+  .about-section,
+  .sources-section {
+    margin: 4rem 0;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+}

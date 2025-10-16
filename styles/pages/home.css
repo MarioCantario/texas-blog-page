@@ -1,8 +1,98 @@
-body {
-  background-image: url("../imgs/texas.webp");
-  backdrop-filter: blur(8px);
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
+/* Main layout container for the home page */
+.home-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh; /* Ensures content is centered vertically */
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Container for the text content */
+.hero-content {
+  max-width: 800px; /* Increased width for more text */
+  margin-bottom: 2.5rem; /* Space between text and image */
+}
+
+.hero-content h1 {
+  font-family: "Rye", "Times New Roman", Times, serif;
+  font-size: 3.5rem; /* Larger, more impactful title */
+  color: var(--glow-pale);
+  text-shadow: 0 2px 12px #000000;
+  margin-bottom: 1.5rem; /* More space after title */
+}
+
+/* Styling for the main intro paragraph */
+.intro-text {
+  font-size: 1.2rem;
+  color: #c9d6e0;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+/* Container for the page descriptions */
+.page-descriptions {
+  text-align: left; /* Aligns text to the left for readability */
+  max-width: 600px;
+  margin: 0 auto 2.5rem auto; /* Centers the block and adds bottom margin */
+  background: rgba(13, 27, 42, 0.4); /* Subtle background for distinction */
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #4e8098;
+}
+
+.page-descriptions p {
+  font-size: 1rem;
+  color: #c9d6e0;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.page-descriptions p:last-child {
+  margin-bottom: 0;
+}
+
+.page-descriptions strong {
+  color: #ffffff; /* Makes the page names stand out */
+}
+
+/* Styling for the button */
+.cta-button {
+  display: inline-block;
+  background-color: #4e8098;
+  color: #ffffff;
+  padding: 12px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+  background-color: #62a0b8;
+  transform: translateY(-2px); /* Lifts the button slightly */
+}
+
+/* Styling for the main image */
+.hero-image {
+  max-width: 800px;
+  width: 100%; /* Makes the image responsive */
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  border: 2px solid #4e8098;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  .intro-text {
+    font-size: 1rem;
+  }
+  .page-descriptions {
+    padding: 1rem;
+  }
 }
