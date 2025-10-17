@@ -26,8 +26,9 @@
 }
 
 /* Styles the video player itself */
-.video-container video {
-  max-width: 800px;
+.video-container iframe {
+  max-width: 550px;
+  aspect-ratio: 16 / 9;
   width: 100%; /* Makes the video responsive */
   border-radius: 16px;
   border: 2px solid #4e8098;
