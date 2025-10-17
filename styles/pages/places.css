@@ -57,23 +57,17 @@
 
 /* MEDIA QUERY for better mobile view */
 @media (max-width: 768px) {
-  .grid {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-  .card {
-    height: 250px;
+  .desc {
+    padding: 1.5rem 1rem;
   }
 
-  .desc {
-    padding: 1rem; /* breathing room around the text */
-  }
   .desc h3 {
-    font-size: 22px; /* Adjusts title size */
+    font-size: 24px;
+    margin-bottom: 0.75rem;
   }
+
   .desc p {
-    font-size: 16px;
-    line-height: 1.4;
+    font-size: 17px;
+    line-height: 1.5;
   }
 }

@@ -31,7 +31,6 @@ body {
   box-sizing: border-box;
 }
 
-/* Section styling, mainly for homepage*/
 section {
   padding: 10px;
   font-size: 20px;
@@ -145,7 +144,7 @@ body:not(.home) {
     grid-column: 1 / -1;
   }
 }
-/* Generell body-styling */
+/* General body-styling */
 body:not(.home) {
   background: radial-gradient(
       1200px 600px at -10% -20%,
@@ -157,8 +156,6 @@ body:not(.home) {
   background-attachment: fixed;
 }
 
-/* Skjermleser-klasse (Screen Reader Only) */
-/* Denne klassen skjuler et element visuelt, men gjør det tilgjengelig for skjermlesere */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -174,7 +171,7 @@ body:not(.home) {
 /* Video layout for video.html */
 .video-wrapper {
   max-width: 1000px;
-  margin: 6rem auto 3rem; /* push away from header/bg-text */
+  margin: 6rem auto 3rem;
   padding: 0 1rem;
   text-align: center;
 }
@@ -185,7 +182,7 @@ body:not(.home) {
   display: block;
   margin: 0 auto;
   border-radius: 12px;
-  background: #000; /* visible behind poster */
+  background: #000;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
 }
 

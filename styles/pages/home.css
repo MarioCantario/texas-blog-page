@@ -1,17 +1,16 @@
-/* Main layout container for the home page */
 .home-layout {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 80vh; /* Ensures content is centered vertically */
+  min-height: 80vh;
   padding: 2rem;
   text-align: center;
 }
 
 /* Container for the text content */
 .hero-content {
-  max-width: 800px; /* Increased width for more text */
+  max-width: 800px;
   margin-bottom: 2.5rem; /* Space between text and image */
 }
 
@@ -20,7 +19,7 @@
   font-size: 3.5rem; /* Larger, more impactful title */
   color: var(--glow-pale);
   text-shadow: 0 2px 12px #000000;
-  margin-bottom: 1.5rem; /* More space after title */
+  margin-bottom: 1.5rem;
 }
 
 /* Styling for the main intro paragraph */
@@ -33,10 +32,10 @@
 
 /* Container for the page descriptions */
 .page-descriptions {
-  text-align: left; /* Aligns text to the left for readability */
+  text-align: left;
   max-width: 600px;
   margin: 0 auto 2.5rem auto; /* Centers the block and adds bottom margin */
-  background: rgba(13, 27, 42, 0.4); /* Subtle background for distinction */
+  background: rgba(13, 27, 42, 0.4);
   padding: 1.5rem;
   border-radius: 8px;
   border: 1px solid #4e8098;
