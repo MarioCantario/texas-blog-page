@@ -95,3 +95,161 @@
     padding: 1rem;
   }
 }
+.simple-rps {
+  max-width: 500px;
+  margin: 4rem auto;
+  padding: 2rem;
+  text-align: center;
+  background: rgba(13, 27, 42, 0.7);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+}
+
+.simple-rps h2 {
+  color: var(--glow-teal);
+  font-family: "Rye", serif;
+  margin-bottom: 0.5rem;
+}
+
+.simple-rps p {
+  color: var(--glow-pale);
+  margin-bottom: 1.5rem;
+}
+
+.rps-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.rps-btn {
+  background: var(--rock-dark);
+  color: var(--glow-pale);
+  border: 2px solid var(--glow-teal);
+  padding: 1rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+  min-width: 120px;
+}
+
+.rps-btn:hover {
+  background: #1e2a3b;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(147, 225, 216, 0.3);
+}
+
+.rps-result {
+  font-size: 1.4rem;
+  font-weight: bold;
+  min-height: 2rem;
+  margin: 1rem 0;
+}
+
+.rps-score {
+  font-size: 1.1rem;
+  color: var(--glow-teal);
+}
+/* --- games.css --- */
+
+/* Global Styles for the GAMESTATION PAGE MARIO*/
+body {
+  background: radial-gradient(
+      1200px 600px at -10% -20%,
+      #114b5f 0%,
+      transparent 60%
+    ),
+    radial-gradient(900px 700px at 120% -10%, #4e8098 0%, transparent 55%),
+    linear-gradient(#020412, #0a1022 40%, #0d1b2a 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Segoe UI", sans-serif;
+  color: #c8f5ff;
+}
+
+/* Hovedboksen for spillene */
+.arcade-container {
+  background: rgba(13, 27, 42, 0.9);
+  border: 2px solid #93e1d8;
+  box-shadow: 0 0 30px rgba(147, 225, 216, 0.15);
+  padding: 40px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 700px;
+  text-align: center;
+  position: relative;
+}
+
+h1 {
+  font-family: "Rye", serif;
+  margin-bottom: 10px;
+  color: #93e1d8;
+}
+
+/* Knapper (Både meny og spill) */
+.menu-btn,
+.game-btn {
+  background: transparent;
+  border: 2px solid #93e1d8;
+  color: #93e1d8;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  margin: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 200px;
+  font-weight: bold;
+}
+
+.menu-btn:hover,
+.game-btn:hover {
+  background: #93e1d8;
+  color: #020412;
+  transform: translateY(-3px);
+}
+
+/* Tilbake-lenke */
+.back-btn {
+  background: none;
+  border: none;
+  color: #5aa9e6;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+/* Hjelpeklasse for å skjule ting */
+.hidden {
+  display: none;
+}
+
+/* --- Quiz Styles --- */
+.options-grid {
+  display: grid;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.option-btn {
+  width: 100%;
+  text-align: left;
+}
+
+/* --- Rock Paper Scissors Styles --- */
+.rps-icons {
+  font-size: 3rem;
+  margin: 20px 0;
+}
+
+.rps-score {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  color: #93e1d8;
+}

@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marius' Arcade</title>
+
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/components/navbar.css" />
+    <link rel="stylesheet" href="styles/pages/games.css" />
+    <link rel="stylesheet" href="styles/components/home.css" />
+  </head>
+
+  <body>
+    <div class="menu-section">
+      <br />
+
+        <button class="menu-btn" onclick="showSection('rps')">
+          Rock Paper Scissors
+        </button>
+
+        <br /><br />
+
+        <a href="index.html">Back to Home Page</a>
+      </div>
+
+      <!-- QUIZ SECTION -->
+      <div id="quiz-section" class="hidden">
+        <h1>Texas Challenge</h1>
+        <div id="quiz-content"></div>
+
+        <button class="back-btn" onclick="showSection('menu')">
+          Exit to Menu
+        </button>
+      </div>
+
+      <!-- ROCK PAPER SCISSORS SECTION -->
+      <div id="rps-section" class="hidden">
+        <h1>Rock Paper Scissors</h1>
+        <p>Make your move!</p>
+
+        <div class="rps-icons">
+          <button class="game-btn" onclick="playRPS('rock')">🪨</button>
+          <button class="game-btn" onclick="playRPS('paper')">📄</button>
+          <button class="game-btn" onclick="playRPS('scissors')">✂️</button>
+        </div>
+
+        <h2 id="rps-result">Choose...</h2>
+
+        <div class="rps-score">
+          You: <span id="p-score">0</span> |
+          Computer: <span id="c-score">0</span>
+        </div>
+
+        <button class="back-btn" onclick="showSection('menu')">
+          Exit to Menu
+        </button>
+      </div>
+
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
